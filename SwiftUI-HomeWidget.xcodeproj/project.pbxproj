@@ -11,7 +11,38 @@
 		76D807302637D21A0038864F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D8072F2637D21A0038864F /* ContentView.swift */; };
 		76D807322637D21E0038864F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D807312637D21E0038864F /* Assets.xcassets */; };
 		76D807352637D21E0038864F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D807342637D21E0038864F /* Preview Assets.xcassets */; };
+		76D807442637D3940038864F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D807432637D3940038864F /* WidgetKit.framework */; };
+		76D807462637D3940038864F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D807452637D3940038864F /* SwiftUI.framework */; };
+		76D807492637D3940038864F /* HomeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D807482637D3940038864F /* HomeWidget.swift */; };
+		76D8074C2637D39A0038864F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D8074B2637D39A0038864F /* Assets.xcassets */; };
+		76D8074E2637D39A0038864F /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76D8074A2637D3940038864F /* HomeWidget.intentdefinition */; };
+		76D8074F2637D39A0038864F /* HomeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76D8074A2637D3940038864F /* HomeWidget.intentdefinition */; };
+		76D807522637D39A0038864F /* HomeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76D807412637D3940038864F /* HomeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76D807502637D39A0038864F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D807222637D21A0038864F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D807402637D3940038864F;
+			remoteInfo = HomeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76D807562637D39A0038864F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76D807522637D39A0038864F /* HomeWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		76D8072A2637D21A0038864F /* SwiftUI-HomeWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-HomeWidget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,13 @@
 		76D807312637D21E0038864F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D807342637D21E0038864F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76D807362637D21E0038864F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D807412637D3940038864F /* HomeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D807432637D3940038864F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		76D807452637D3940038864F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		76D807482637D3940038864F /* HomeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWidget.swift; sourceTree = "<group>"; };
+		76D8074A2637D3940038864F /* HomeWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomeWidget.intentdefinition; sourceTree = "<group>"; };
+		76D8074B2637D39A0038864F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76D8074D2637D39A0038864F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D8073E2637D3940038864F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D807462637D3940038864F /* SwiftUI.framework in Frameworks */,
+				76D807442637D3940038864F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				76D8072C2637D21A0038864F /* SwiftUI-HomeWidget */,
+				76D807472637D3940038864F /* HomeWidget */,
+				76D807422637D3940038864F /* Frameworks */,
 				76D8072B2637D21A0038864F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				76D8072A2637D21A0038864F /* SwiftUI-HomeWidget.app */,
+				76D807412637D3940038864F /* HomeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +119,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		76D807422637D3940038864F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76D807432637D3940038864F /* WidgetKit.framework */,
+				76D807452637D3940038864F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76D807472637D3940038864F /* HomeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				76D807482637D3940038864F /* HomeWidget.swift */,
+				76D8074A2637D3940038864F /* HomeWidget.intentdefinition */,
+				76D8074B2637D39A0038864F /* Assets.xcassets */,
+				76D8074D2637D39A0038864F /* Info.plist */,
+			);
+			path = HomeWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +149,34 @@
 				76D807262637D21A0038864F /* Sources */,
 				76D807272637D21A0038864F /* Frameworks */,
 				76D807282637D21A0038864F /* Resources */,
+				76D807562637D39A0038864F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76D807512637D39A0038864F /* PBXTargetDependency */,
 			);
 			name = "SwiftUI-HomeWidget";
 			productName = "SwiftUI-HomeWidget";
 			productReference = 76D8072A2637D21A0038864F /* SwiftUI-HomeWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		76D807402637D3940038864F /* HomeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D807532637D39A0038864F /* Build configuration list for PBXNativeTarget "HomeWidgetExtension" */;
+			buildPhases = (
+				76D8073D2637D3940038864F /* Sources */,
+				76D8073E2637D3940038864F /* Frameworks */,
+				76D8073F2637D3940038864F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeWidgetExtension;
+			productName = HomeWidgetExtension;
+			productReference = 76D807412637D3940038864F /* HomeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +188,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					76D807292637D21A0038864F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					76D807402637D3940038864F = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -117,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				76D807292637D21A0038864F /* SwiftUI-HomeWidget */,
+				76D807402637D3940038864F /* HomeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D8073F2637D3940038864F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D8074C2637D39A0038864F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,10 +241,28 @@
 			files = (
 				76D807302637D21A0038864F /* ContentView.swift in Sources */,
 				76D8072E2637D21A0038864F /* SwiftUI_HomeWidgetApp.swift in Sources */,
+				76D8074F2637D39A0038864F /* HomeWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D8073D2637D3940038864F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D807492637D3940038864F /* HomeWidget.swift in Sources */,
+				76D8074E2637D39A0038864F /* HomeWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76D807512637D39A0038864F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D807402637D3940038864F /* HomeWidgetExtension */;
+			targetProxy = 76D807502637D39A0038864F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		76D807372637D21E0038864F /* Debug */ = {
@@ -265,6 +384,7 @@
 		76D8073A2637D21E0038864F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +406,7 @@
 		76D8073B2637D21E0038864F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +420,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.SwiftUI-HomeWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76D807542637D39A0038864F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HomeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.SwiftUI-HomeWidget.HomeWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76D807552637D39A0038864F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HomeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.SwiftUI-HomeWidget.HomeWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +482,15 @@
 			buildConfigurations = (
 				76D8073A2637D21E0038864F /* Debug */,
 				76D8073B2637D21E0038864F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D807532637D39A0038864F /* Build configuration list for PBXNativeTarget "HomeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D807542637D39A0038864F /* Debug */,
+				76D807552637D39A0038864F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
