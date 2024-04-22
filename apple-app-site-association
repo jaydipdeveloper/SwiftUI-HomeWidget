@@ -1,0 +1,20 @@
+{
+    "webcredentials": {
+        "apps": [
+            "SRGFX58LRA.com.skg.app.password.manager"
+        ]
+    },
+    "applinks": {
+        "apps": [
+            "SRGFX58LRA.com.skg.app.password.manager"
+        ],
+        "details": [
+            {
+                "appID": "SRGFX58LRA.com.skg.app.password.manager",
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    }
+}
